@@ -56,7 +56,7 @@
 		"a": 2
 	},
 	{
-		"q": "Welchen Namen trägt das für die Beziehungen zuanderen Staaten zuständige Ministerium der Bundesregierung?",
+		"q": "Welchen Namen trägt das für die Beziehungen zu anderen Staaten zuständige Ministerium der Bundesregierung?",
 		"p": [
 			{"a": 0, "t": "Verteidigungsministerium"},
 			{"a": 1, "t": "Hardthöhe"},
@@ -128,12 +128,12 @@
 			{"a": 1, "t": "Bei Bränden der Brandklasse A"},
 			{"a": 2, "t": "Bei Bränden in elektrischen Anlagen unter 1.000V"},
 			{"a": 3, "t": "Bei Bränden im Bereich von Eisenbahnstrecken"},
-			{"a": 4, "t": "Bei Brrnden in Serverräumen"}
+			{"a": 4, "t": "Bei Bränden in Serverräumen"}
 		],
 		"a": 0
 	},
 	{
-		"q": "Um welches Maß dehnt sich ein Bauteil aus Stahlim Brandfall aus?",
+		"q": "Um welches Maß dehnt sich ein Bauteil aus Stahl im Brandfall aus?",
 		"p": [
 			{"a": 0, "t": "Stahl ist nicht brennbar und dehnt sich nicht aus"},
 			{"a": 1, "t": "Stahl dehnt sich um 1,2mm pro Meter und pro 100K Wärmebeaufschlagung aus"},
@@ -177,7 +177,7 @@
 		"a": 3
 	}, 
 	{
-		"q": "An einer Einsatzstelle auf einer Bundesautobahnerfolgt die Absicherung entgegender Fahrtrichtung des Fließenden Verkehrs. In welcher Entfernung sollte die erste Absicherungsmaßnahme erfolgen?",
+		"q": "An einer Einsatzstelle auf einer Bundesautobahn erfolgt die Absicherung entgegen der Fahrtrichtung des Fließenden Verkehrs. In welcher Entfernung sollte die erste Absicherungsmaßnahme erfolgen?",
 		"p": [
 			{"a": 0, "t": "150 m"},
 			{"a": 1, "t": "300 m"},
