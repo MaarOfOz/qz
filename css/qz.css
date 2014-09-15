@@ -1,0 +1,13 @@
+body {
+	padding-top: 60px;
+	overflow-y: scroll;
+}
+
+ul {
+	list-style: none;
+}
+
+.answer {
+	white-space: normal !important;
+	text-align: center;
+}

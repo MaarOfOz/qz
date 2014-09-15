@@ -1,0 +1,333 @@
+[
+	{
+		"q": "Wer kann einer öffentlichen Feuerwehr zusätzliche Einsatzbereiche zuweisen?",
+		"p": [
+			{"a": 0, "t": "Die Kreisverwaltung"},
+			{"a": 1, "t": "Die zuständige Bezirksregierung"},
+			{"a": 2, "t": "Die Landesregierung"},
+			{"a": 3, "t": "Die Gemeinde"},
+			{"a": 4, "t": "Der Leiter der Feuerwehr"}
+		],
+		"a": 1
+	},
+	{
+		"q": "Welche Art(en) von Werkfeuerwehren kennt das FSHG?",
+		"p": [
+			{"a": 0, "t": "Anerkannte und angeordnete Werkfeuerwehr"},
+			{"a": 1, "t": "Betriebsfeuerwehr"},
+			{"a": 2, "t": "Hausfeuerwehr"},
+			{"a": 3, "t": "Privatfeuerwehr"},
+			{"a": 4, "t": "Freiwillige und hauptamtliche Werkfeuerwehr"}
+		],
+		"a": 0
+	},
+	{
+		"q": "Wer darf nach FSHG Personen von einer Einsatzstelle verweisen, die den Einsatz stören?",
+		"p": [
+			{"a": 0, "t": "Nur die Polizei"},
+			{"a": 1, "t": "Nur das Ordnungsamt"},
+			{"a": 2, "t": "Jede Einsatzkraft der Feuerwehr"},
+			{"a": 3, "t": "Nur der Einsatzleiter"},
+			{"a": 4, "t": "Die Feuerwehr nur nach Anweisung durch die Polizei"}
+		],
+		"a": 2
+
+	},
+	{
+		"q": " Welche Regierungsbezirke gibt es in Nordrhein-Westfalen?",
+		"p": [
+			{"a": 0, "t": "Arnsberg, Düsseldorf, Köln"},
+			{"a": 1, "t": "Düsseldorf, Köln"},
+			{"a": 2, "t": "Rheinland, Westfalen"},
+			{"a": 3, "t": "Nordrhein, Westfalen"},
+			{"a": 4, "t": "Arnsberg, Detmold, Düsseldorf, Köln, Münster"}
+		],
+		"a": 4
+	},
+	{
+		"q": "Wer ist oberster Repräsentant einer kreisangehörigen Stadt oder Gemeinde und leitet die Verwaltung? ",
+		"p": [
+			{"a": 0, "t": "Der / Die Leiter/in der Feuerwehr"},
+			{"a": 1, "t": "Der / Die Erste Beigeordnete"},
+			{"a": 2, "t": "Der / Die Bürgermeister/in"},
+			{"a": 3, "t": "Der / Die Rechtsdezernent/in"},
+			{"a": 4, "t": "Der / Die Stadtdirektor/in"}
+		],
+		"a": 2
+	},
+	{
+		"q": "Welchen Namen trägt das für die Beziehungen zuanderen Staaten zuständige Ministerium der Bundesregierung?",
+		"p": [
+			{"a": 0, "t": "Verteidigungsministerium"},
+			{"a": 1, "t": "Hardthöhe"},
+			{"a": 2, "t": "Auswärtiges Amt"},
+			{"a": 3, "t": "Bundespräsidialamt"},
+			{"a": 4, "t": "Bundestag"}
+		],
+		"a": 2
+	},
+	{
+		"q": "Welche Stadt ist Bundeshauptstadt der Bundesrepublik Deutschland?",
+		"p": [
+			{"a": 0, "t": "Berlin"},
+			{"a": 1, "t": "Bonn"},
+			{"a": 2, "t": "Frankfurt / Main"},
+			{"a": 3, "t": "Hamburg"},
+			{"a": 4, "t": "München"}
+		],
+		"a": 0
+	},
+	{
+		"q": "Wer bildet den Bundesrat?",
+		"p": [
+			{"a": 0, "t": "Vertreter der Landesregierungen"},
+			{"a": 1, "t": "Vertreter der Landtage"},
+			{"a": 2, "t": "Bundestag und Landtage"},
+			{"a": 3, "t": "Bundesversammlung und Bundesregierung"},
+			{"a": 4, "t": "Die Landtagspräsidenten"}
+		],
+		"a": 0
+	}, 
+	{
+		"q": "Welches ist der Spitzenverband aller Feuerwehren in Deutschland?",
+		"p": [
+			{"a": 0, "t": "Vereinigung zur Förderung des deutschen Brandschutzes (vfdb) mit Sitz in Altenberge"},
+			{"a": 1, "t": "Deutscher Feuerwehrverband (DFV) mit Sitz in Berlin"},
+			{"a": 2, "t": "Arbeitsgemeinschaft der Leiter der Berufsfeuerwehren (AGBF Bund)"},
+			{"a": 3, "t": "Die Konferenz der Innenminister und Innensenatoren"},
+			{"a": 4, "t": "Versandhaus des Deutschen Feuerwehrverbandes GmbH mit Sitz in Bonn"}
+		],
+		"a": 1
+	}, 
+	{
+		"q": "Welche Kurzbezeichnung ist für ein Notarzteinsatzfahrzeug richtig?",
+		"p": [
+			{"a": 0, "t": "NAW"},
+			{"a": 1, "t": "NEF"},
+			{"a": 2, "t": "AEF"},
+			{"a": 3, "t": "RTW"},
+			{"a": 4, "t": "NAF"}
+		],
+		"a": 1
+	},
+	{
+		"q": "Welche Aussage zu Verbrennungen ist richtig?",
+		"p": [
+			{"a": 0, "t": "Verbrennungen werden immer umfangreich gekühlt"},
+			{"a": 1, "t": "Wenn möglich Brandwundensalbe auf Verbrennungen auftragen"},
+			{"a": 2, "t": "Verbrennungen werden gar nicht mehr geköhlt"},
+			{"a": 3, "t": "Kleinflächige Verbrennungen werden gekühlt, groß flächige Verbrennungen sollen wenn möglich nicht mehr gekühlt werden"},
+			{"a": 4, "t": "Je kälter das Wasser zum Kühlen ist, desto besser"}
+		],
+		"a": 3
+	},
+	{
+		"q": "Bei welchen Bränden darf das Löschmittel Wasser nicht eingesetzt werden, wenn Wasserschäden, auch geringfügige, entstehen können?",
+		"p": [
+			{"a": 0, "t": "Bei Metallbränden"},
+			{"a": 1, "t": "Bei Bränden der Brandklasse A"},
+			{"a": 2, "t": "Bei Bränden in elektrischen Anlagen unter 1.000V"},
+			{"a": 3, "t": "Bei Bränden im Bereich von Eisenbahnstrecken"},
+			{"a": 4, "t": "Bei Brrnden in Serverräumen"}
+		],
+		"a": 0
+	},
+	{
+		"q": "Um welches Maß dehnt sich ein Bauteil aus Stahlim Brandfall aus?",
+		"p": [
+			{"a": 0, "t": "Stahl ist nicht brennbar und dehnt sich nicht aus"},
+			{"a": 1, "t": "Stahl dehnt sich um 1,2mm pro Meter und pro 100K Wärmebeaufschlagung aus"},
+			{"a": 2, "t": "Stahl zieht sich zusammen und dehnt sich nicht aus"},
+			{"a": 3, "t": "Stahl bricht bei starker Hitzebeaufschlagung, dehnt sich aber nicht aus"},
+			{"a": 4, "t": "Stahl dehnt sich nur unter Kältebeaufschlagung aus (sog. ,,Anomalie des Stahls'')"}
+		],
+		"a": 1
+	},
+	{
+		"q": "In Treppenräumen ist die Lagerung von brennbarem Material...",
+		"p": [
+			{"a": 0, "t": "grundsätzlich nicht zulässig"},
+			{"a": 1, "t": "nur im obersten Geschoss zulässig"},
+			{"a": 2, "t": "nur zulässig bei einem vorhandenem Rauchabzug"},
+			{"a": 3, "t": "nur zulässig, wenn eine Sprinkleranlage vorhanden ist"},
+			{"a": 4, "t": "nur in Hochhäusern nicht zulässig"}
+		],
+		"a": 0
+	},
+	{
+		"q": "Welche Aufgaben hat eine Brandsicherheitswache?",
+		"p": [
+			{"a": 0, "t": "Kontrolle der Personen auf brennbare Stoffe"},
+			{"a": 1, "t": "Sicherung der Rettungs- und Angriffswege"},
+			{"a": 2, "t": "ledige Kontrolle vor Beginn der Veranstaltung auf Vorhandensein von Löschgeräten"},
+			{"a": 3, "t": "Brandschutzbelehrung des Personals"},
+			{"a": 4, "t": "Sicherstellung des gesamten Brandschutzes am Veranstaltungsort"}
+		],
+		"a": 1
+	},
+	{
+		"q": "Beim Anschlagen von Seilen, Ketten oder Hebebänder darf welcher maximale Spreizwinkel angewandt werden?",
+		"p": [
+			{"a": 0, "t": "30°"},
+			{"a": 1, "t": "60°"},
+			{"a": 2, "t": "90°"},
+			{"a": 3, "t": "120°"},
+			{"a": 4, "t": "270°"}
+		],
+		"a": 3
+	}, 
+	{
+		"q": "An einer Einsatzstelle auf einer Bundesautobahnerfolgt die Absicherung entgegender Fahrtrichtung des Fließenden Verkehrs. In welcher Entfernung sollte die erste Absicherungsmaßnahme erfolgen?",
+		"p": [
+			{"a": 0, "t": "150 m"},
+			{"a": 1, "t": "300 m"},
+			{"a": 2, "t": "450 m"},
+			{"a": 3, "t": "500 m"},
+			{"a": 4, "t": "800 m"}
+		],
+		"a": 4
+	}, 
+	{
+		"q": "Welche Möglichkeit haben sie bei einem verunfallten Tanklastzug zu erkennen, ob es sich um einen Gefahrgut-Transport handelt?",
+		"p": [
+			{"a": 0, "t": "Gefahrstoffsymbole und Warntafel"},
+			{"a": 1, "t": "Polizeiliches Kennzeichen"},
+			{"a": 2, "t": "Art der Beleuchtung"},
+			{"a": 3, "t": "Nur anhand der Transportpapiere"},
+			{"a": 4, "t": "Anhand der Transport- und Versendernummer"}
+		],
+		"a": 0
+	},
+	{
+		"q": "Wonach werden die Schutzmaßnahmen entsprechend der FwDV 500 bei einem C Einsatz geordnet?",
+		"p": [
+			{"a": 0, "t": "Nach Maßnahmengruppen"},
+			{"a": 1, "t": "Nach Einsatzgrundsätzen"},
+			{"a": 2, "t": "Nach Gefahrengruppen"},
+			{"a": 3, "t": "Nach Einsatzrichtlinien"},
+			{"a": 4, "t": "Nach dem Befehl des Einsatzleiters"}
+		],
+		"a": 0
+	},
+	{
+		"q": "Welche Filterart wird bei den üblichen Feuerwehreinsätzen verwendet?",
+		"p": [
+			{"a": 0, "t": "Partikelfilter"},
+			{"a": 1, "t": "Staubfilter"},
+			{"a": 2, "t": "Mehrzweckfilter"},
+			{"a": 3, "t": "Feuerwehrfilter"},
+			{"a": 4, "t": "Kombinationsfilter"}
+		],
+		"a": 4
+	},
+	{
+		"q": "Welches Warngeräte wird zum Schutz der Einsatzkräfte im A-Einsatz verwendet?",
+		"p": [
+			{"a": 0, "t": "Explosions-Messgerät"},
+			{"a": 1, "t": "Dosisleistungsmessgerät"},
+			{"a": 2, "t": "Amtlicher Dosimeter"},
+			{"a": 3, "t": "Private Dosimeter"},
+			{"a": 4, "t": "Wärmebildkamera"}
+		],
+		"a": 2
+	},
+	{
+		"q": "Welcher Rufname für eine Leitstelle für Feuerschutz und Rettungsdienst ist gemäß OPTA-Erlass korrekt?",
+		"p": [
+			{"a": 0, "t": "''Zentrale Dortmund''"},
+			{"a": 1, "t": "''Florian Sauerland''"},
+			{"a": 2, "t": "''Leitstelle Lippe''"},
+			{"a": 3, "t": "''Funkstelle Erft''"},
+			{"a": 4, "t": "''Kreis Unna Callcenter''"}
+		],
+		"a": 2
+	},
+	{
+		"q": "Mit welchem Druckverlust rechnest du bei einer Fördermenge von 800 l/min, bei 10 m Höhenunterschied und 100 m Schlauchleitung? ",
+		"p": [
+			{"a": 0, "t": "ca. 2,1 bar"},
+			{"a": 1, "t": "ca. 21 bar"},
+			{"a": 2, "t": "ca. 4,2 bar"},
+			{"a": 3, "t": "ca. 1,1 bar"},
+			{"a": 4, "t": "ca. 8,1 bar"}
+		],
+		"a": 0
+	},
+	{
+		"q": "Wie nennt man Schaum mit einer Verschäumungszahl von 21 - 200?",
+		"p": [
+			{"a": 0, "t": "Mehrbereichsschaummittel"},
+			{"a": 1, "t": "Leichtschaum"},
+			{"a": 2, "t": "Schwerschaum"},
+			{"a": 3, "t": "Mittelschaum"},
+			{"a": 4, "t": "Druckluftschaum"}
+		],
+		"a": 3
+	},
+	{
+		"q": "Wer rüstet sich bei einem Atemschutzeinsatz einer Gruppe als Sicherheitstruppaus?",
+		"p": [
+			{"a": 0, "t": "Der Schlauchtrupp"},
+			{"a": 1, "t": "Melder und Maschinist"},
+			{"a": 2, "t": "Der Wassertrupp"},
+			{"a": 3, "t": "Nachrückende Kräfte"},
+			{"a": 4, "t": "Der Trupp, den der Gruppenführer hierzu anweist"}
+		],
+		"a": 2
+	},
+	{
+		"q": "Die Schlauchreserven bei einem Angriff mit einem C-Strahlrohr müssen berücksichtigt werden, ",
+		"p": [
+			{"a": 0, "t": "damit die Schläuche in Buchten sauber verlegt werden"},
+			{"a": 1, "t": "der vorgehende Trupp eine notwendige Beweglichkeit und Reichweite erhält"},
+			{"a": 2, "t": "um ausreichend Schlauchmaterial an der Einsatzstelle zu haben"},
+			{"a": 3, "t": "um bei einem Schlauchplatzer sofort reagieren zukönnen"},
+			{"a": 4, "t": "damit der vorgehende Trupp diese auch mitnimmt"}
+		],
+		"a": 1
+	},
+	{
+		"q": "Für welchen Zeitraum müssen Löschwasserbrunnen (künstlich angelegte Entnahmestellen) eine Wasserlieferung mindestens gewährleisten können?",
+		"p": [
+			{"a": 0, "t": "Für 1 Stunde"},
+			{"a": 1, "t": "Für 2 Stunden"},
+			{"a": 2, "t": "Für 3 Stunden"},
+			{"a": 3, "t": "Für 4 Stunden"},
+			{"a": 4, "t": "Für 5 Stunden"}
+		],
+		"a": 2
+	},
+	{
+		"q": "Schläuche für Sonderrohre werden am Verteiler (in Fließrichtung)...",
+		"p": [
+			{"a": 0, "t": "an der linken Kupplung angeschlossen"},
+			{"a": 1, "t": "an der mittleren Kupplung angeschlossen"},
+			{"a": 2, "t": "an der rechten Kupplung angeschlossen"},
+			{"a": 3, "t": "nach Weisung des Gruppenführers angeschlossen"},
+			{"a": 4, "t": "immer als erstes angeschlossen"}
+		],
+		"a": 1
+	},
+	{
+		"q": "Darf mit dem Notbetrieb der Drehleiter ein Einsatz gefahren werden?",
+		"p": [
+			{"a": 0, "t": "Ja"},
+			{"a": 1, "t": "Nein, sie ist nur zum Ablegen der Leiter in Fahrstellung vorgesehen"},
+			{"a": 2, "t": "Nur wenn keine Personen auf dem Leitersatz bzw. im Korb sind"},
+			{"a": 3, "t": "Nur nach Freigabe des Gruppenführers"},
+			{"a": 4, "t": "Dies liegt im Ermessens-Spielraum des Drehleiter-Maschinisten"}
+		],
+		"a": 1
+	},
+	{
+		"q": "Das Kleinlöschgerät Kübelspritze dient...",
+		"p": [
+			{"a": 0, "t": "zum Löschen eines Zimmerbrandes"},
+			{"a": 1, "t": "zum Ablöschen von Entstehungsbränden"},
+			{"a": 2, "t": "zum Löschen eines Brandes der Brandklasse F"},
+			{"a": 3, "t": "lediglich dem Vorbeugenden Brandschutz"},
+			{"a": 4, "t": "zur Brandschutzerziehung"}
+		],
+		"a": 1
+	}
+]
