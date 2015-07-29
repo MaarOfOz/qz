@@ -1,1 +1,3 @@
 bower_components
+files/*
+!files/test.json
