@@ -6,15 +6,28 @@ define(['angular'], function(angular) {
 
 		self.questions = questions;
 
+		self.state = '';
+
 		self.i = 0;
 		self.r = -1;
 		self.w = -1;
+
+		self.incorrectlyAnsweredQuestions = [];
 
 		self.stats = {
 			'right': 0,
 			'wrong': 0
 		};
 
+		var start = function() {
+			self.i = 0;
+			self.stats.right = 0;
+			self.stats.wrong = 0;
+			self.incorrectlyAnsweredQuestions = [];
+			shuffle_questions();
+			shuffle_answers();
+			self.state = 'checking';
+		};
 		var shuffle_questions = function() {
 			self.questions.shuffle();
 		};
@@ -22,8 +35,9 @@ define(['angular'], function(angular) {
 			self.questions[self.i].p.shuffle();
 		};
 
-		shuffle_questions();
-		shuffle_answers();
+		start();
+
+		self.start = start;
 
 		self.answer = function(a) {
 			if (self.r > -1) {
@@ -37,6 +51,11 @@ define(['angular'], function(angular) {
 				++self.stats.wrong;
 				self.r = self.questions[self.i].a;
 				self.w = a;
+
+				self.incorrectlyAnsweredQuestions.push({
+					'question': self.questions[self.i],
+					'answer': a
+				});
 			}
 
 			$timeout(self.nextQuestion, 1500);
@@ -46,14 +65,11 @@ define(['angular'], function(angular) {
 			self.r = -1;
 			self.w = -1;
 			if (++self.i >= self.questions.length) {
-				shuffle_questions();
-				self.i = 0;
-				self.stats.right = 0;
-				self.stats.wrong = 0;
+				self.state = 'score';
+				return;
 			}
 			shuffle_answers();
 		};
-
 	}
 
 	QuizCtrl['$inject'] = ['$timeout', 'questions'];
