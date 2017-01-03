@@ -17,7 +17,7 @@
 		<script data-main="js/main" src="bower_components/requirejs/require.js"></script>
 	</head>
 
-	<body spellcheck="false">
+	<body spellcheck="false" data-ng-controller="MenuCtrl as menu">
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -31,9 +31,12 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="/quiz/lnw2014">LNW 2014</a></li>
-						<li><a href="/quiz/lnw2015">LNW 2015</a></li>
-						<li><a href="/about">About</a></li>
+						<li data-ng-cloak data-ng-repeat="quiz in menu.quizzes">
+							<a href="/quiz/{{quiz.file}}">{{quiz.name}}</a>
+						</li>
+						<li>
+							<a href="/about">About</a>
+						</li>
 					</ul>
 				</div>
 			</div>

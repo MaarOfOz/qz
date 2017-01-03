@@ -1,1 +1,13 @@
-<p class="lead">{{quiz.questions[quiz.i].q}}</p><ul data-ng-repeat="q in quiz.questions[quiz.i].p">	<li>		<button type="button" class="btn btn-default btn-block answer" 			data-ng-click="quiz.answer(q.a)"			data-ng-class="{'btn-danger': q.a == quiz.w, 'btn-success': q.a == quiz.r}"			data-ng-disabled="quiz.r > -1"			>{{q.t}}</button>	</li></ul><button type="button" class="btn btn-default" 	data-ng-click="quiz.nextQuestion()"	data-ng-disabled="quiz.r > -1">skip</button><span class="text-success">Right: {{quiz.stats.right}}</span><span class="text-danger">Wrong: {{quiz.stats.wrong}}</span><span class="text-primary pull-right">{{quiz.i + 1}} / {{quiz.questions.length}}</span>
+<p class="lead">{{quiz.questions[quiz.i].q}}</p>
+
+<ul data-ng-repeat="q in quiz.questions[quiz.i].p">
+	<li>
+		<button type="button" class="btn btn-default btn-block answer" data-ng-click="quiz.answer(q.a)" data-ng-class="{'btn-danger': q.a == quiz.w, 'btn-success': q.a == quiz.r}" data-ng-disabled="quiz.r > -1">{{q.t}}</button>
+	</li>
+</ul>
+
+<button type="button" class="btn btn-default" data-ng-click="quiz.nextQuestion()" data-ng-disabled="quiz.r > -1">skip</button>
+
+<span class="text-success">Right: {{quiz.stats.right}}</span>
+<span class="text-danger">Wrong: {{quiz.stats.wrong}}</span>
+<span class="text-primary pull-right">{{quiz.i + 1}} / {{quiz.questions.length}}</span>

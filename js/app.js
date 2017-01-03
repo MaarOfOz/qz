@@ -5,12 +5,14 @@ define([
 	'angular-route',
 	'bootstrap',
 	'array-util',
+	'qz.menu/MenuModule',
 	'qz.quiz/QuizModule'
 ], function(angular) {
 
 	angular
 		.module('qz', [
 			'ngRoute',
+			'qz.menu',
 			'qz.quiz'
 		])
 		.factory('httpRequestInterceptor', function($q, $location) {

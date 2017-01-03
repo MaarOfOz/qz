@@ -4,6 +4,8 @@ define(['angular'], function(angular) {
 	function QuizCtrl($timeout, questions) {
 		var self = this;
 
+		self.questions = questions;
+
 		self.i = 0;
 		self.r = -1;
 		self.w = -1;
@@ -13,25 +15,25 @@ define(['angular'], function(angular) {
 			'wrong': 0
 		};
 
-		var shuffle_questions = function(questions) {
-			self.questions = questions.shuffle();
+		var shuffle_questions = function() {
+			self.questions.shuffle();
 		};
 		var shuffle_answers = function() {
 			self.questions[self.i].p.shuffle();
 		};
 
-		shuffle_questions(questions);
+		shuffle_questions();
 		shuffle_answers();
 
 		self.answer = function(a) {
-			if(self.r > -1)
+			if (self.r > -1) {
 				return;
+			}
 
-			if(a === self.questions[self.i].a) {
+			if (a === self.questions[self.i].a) {
 				++self.stats.right;
 				self.r = a;
-			}
-			else {
+			} else {
 				++self.stats.wrong;
 				self.r = self.questions[self.i].a;
 				self.w = a;
@@ -44,7 +46,7 @@ define(['angular'], function(angular) {
 			self.r = -1;
 			self.w = -1;
 			if (++self.i >= self.questions.length) {
-				shuffle_questions(questions);
+				shuffle_questions();
 				self.i = 0;
 				self.stats.right = 0;
 				self.stats.wrong = 0;
@@ -57,7 +59,7 @@ define(['angular'], function(angular) {
 	QuizCtrl['$inject'] = ['$timeout', 'questions'];
 
 	function QuizCtrlResolve($route, $http) {
-		return $http.get('files/' + $route.current.params.file + '.json').then(function(response) {
+		return $http.get('files/quizzes/' + $route.current.params.file).then(function(response) {
 			return response.data;
 		});
 	}
