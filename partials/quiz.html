@@ -8,7 +8,7 @@
 			</li>
 		</ul>
 
-		<button type="button" class="btn btn-default" data-ng-click="quiz.nextQuestion()" data-ng-disabled="quiz.r > -1">skip</button>
+		<button type="button" class="btn btn-default" data-ng-click="quiz.skip()" data-ng-disabled="quiz.r > -1">skip</button>
 
 		<span class="text-success">Right: {{quiz.stats.right}}</span>
 		<span class="text-danger">Wrong: {{quiz.stats.wrong}}</span>
@@ -38,7 +38,7 @@
 					<tr data-ng-repeat="q in quiz.incorrectlyAnsweredQuestions">
 						<td>{{q.question.q}}</td>
 						<td>{{q.question.p[q.question.a].t}}</td>
-						<td>{{q.question.p[q.answer].t}}</td>
+						<td>{{q.answer == -1 ? "-" : q.question.p[q.answer].t}}</td>
 					</tr>
 				</tbody>
 			</table>

@@ -34,6 +34,15 @@ define(['angular'], function(angular) {
 		var shuffle_answers = function() {
 			self.questions[self.i].p.shuffle();
 		};
+		var nextQuestion = function() {
+			self.r = -1;
+			self.w = -1;
+			if (++self.i >= self.questions.length) {
+				self.state = 'score';
+				return;
+			}
+			shuffle_answers();
+		};
 
 		start();
 
@@ -58,18 +67,21 @@ define(['angular'], function(angular) {
 				});
 			}
 
-			$timeout(self.nextQuestion, 1500);
+			$timeout(nextQuestion, 1500);
 		};
 
-		self.nextQuestion = function() {
-			self.r = -1;
-			self.w = -1;
-			if (++self.i >= self.questions.length) {
-				self.state = 'score';
-				return;
-			}
-			shuffle_answers();
+		self.skip = function() {
+			++self.stats.wrong;
+			self.r = self.questions[self.i].a;
+
+			self.incorrectlyAnsweredQuestions.push({
+				'question': self.questions[self.i],
+				'answer': -1
+			});
+
+			$timeout(nextQuestion, 1500);
 		};
+
 	}
 
 	QuizCtrl['$inject'] = ['$timeout', 'questions'];
