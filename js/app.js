@@ -4,7 +4,6 @@ define([
 	'angular',
 	'angular-route',
 	'bootstrap',
-	'array-util',
 	'qz.menu/MenuModule',
 	'qz.quiz/QuizModule'
 ], function(angular) {

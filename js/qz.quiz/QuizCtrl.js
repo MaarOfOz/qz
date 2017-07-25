@@ -6,6 +6,13 @@ define(['angular'], function(angular) {
 
 		self.questions = questions;
 
+		self.question = {
+			'q': '',
+			'a': '',
+			'b': []
+		};
+		self.answers = [];
+
 		self.state = '';
 
 		self.i = 0;
@@ -19,20 +26,35 @@ define(['angular'], function(angular) {
 			'wrong': 0
 		};
 
+		var shuffle = function(a) {
+			for (var i = a.length - 1; i > 0; i--) {
+				var j = Math.floor(Math.random() * (i + 1));
+				var temp = a[i];
+				a[i] = a[j];
+				a[j] = temp;
+			}
+		};
+
 		var start = function() {
 			self.i = 0;
+			self.question = {
+				'q': '',
+				'a': '',
+				'b': []
+			};
+			self.answers = [];
 			self.stats.right = 0;
 			self.stats.wrong = 0;
 			self.incorrectlyAnsweredQuestions = [];
-			shuffle_questions();
-			shuffle_answers();
+			shuffle(self.questions);
+			selectQuestion();
 			self.state = 'checking';
 		};
-		var shuffle_questions = function() {
-			self.questions.shuffle();
-		};
-		var shuffle_answers = function() {
-			self.questions[self.i].p.shuffle();
+		var selectQuestion = function() {
+			self.question = self.questions[self.i];
+			self.answers = self.question.b.slice(0);
+			self.answers.push(self.question.a);
+			shuffle(self.answers);
 		};
 		var nextQuestion = function() {
 			self.r = -1;
@@ -41,7 +63,7 @@ define(['angular'], function(angular) {
 				self.state = 'score';
 				return;
 			}
-			shuffle_answers();
+			selectQuestion();
 		};
 
 		start();
@@ -53,17 +75,18 @@ define(['angular'], function(angular) {
 				return;
 			}
 
-			if (a === self.questions[self.i].a) {
+			self.r = self.question.a;
+
+			if (a === self.question.a) {
 				++self.stats.right;
-				self.r = a;
 			} else {
 				++self.stats.wrong;
-				self.r = self.questions[self.i].a;
 				self.w = a;
 
 				self.incorrectlyAnsweredQuestions.push({
-					'question': self.questions[self.i],
-					'answer': a
+					'q': self.question.q,
+					'a': self.question.a,
+					'w': a === -1 ? '-' : a
 				});
 			}
 
@@ -71,15 +94,7 @@ define(['angular'], function(angular) {
 		};
 
 		self.skip = function() {
-			++self.stats.wrong;
-			self.r = self.questions[self.i].a;
-
-			self.incorrectlyAnsweredQuestions.push({
-				'question': self.questions[self.i],
-				'answer': -1
-			});
-
-			$timeout(nextQuestion, 1500);
+			self.answer(-1);
 		};
 
 	}

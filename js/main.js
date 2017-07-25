@@ -6,8 +6,7 @@ require.config({
 		'angular': '/../bower_components/angular/angular',
 		'angular-route': '/../bower_components/angular-route/angular-route',
 		'jquery': '/../bower_components/jquery/dist/jquery',
-		'bootstrap': '/../bower_components/bootstrap/dist/js/bootstrap',
-		'array-util': '/../bower_components/array-util/lib/util'
+		'bootstrap': '/../bower_components/bootstrap/dist/js/bootstrap'
 	},
 	'shim': {
 		'angular': {
