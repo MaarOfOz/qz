@@ -87,7 +87,7 @@ define(['angular'], function(angular) {
 	QuizCtrl['$inject'] = ['$timeout', 'questions'];
 
 	function QuizCtrlResolve($route, $http) {
-		return $http.get('files/quizzes/' + $route.current.params.file).then(function(response) {
+		return $http.get('files/quizzes/' + $route.current.params.file + '.json').then(function(response) {
 			return response.data;
 		});
 	}
